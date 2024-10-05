@@ -173,25 +173,25 @@
 document.getElementById('resetGameButton').addEventListener('click', resetGame);
 
         const upgrades = [
-            { name: "Better Squeezing", baseCost: 10, costMultiplier: 1.1, effect: () => juicePerClick++, description: "Increase juice per click" },
-            { name: "Auto Squeezer", baseCost: 50, costMultiplier: 1.15, effect: () => { juicePerSecond++; orangesPerSecond++; }, description: "Produce 1 juice per second" },
-            { name: "Orange Grove", baseCost: 100, costMultiplier: 1.2, effect: () => { juicePerSecond += 5; orangesPerSecond += 5; }, description: "+5 juice per second" },
-            { name: "Juice Factory", baseCost: 500, costMultiplier: 1.3, effect: () => { juicePerSecond += 20; orangesPerSecond += 20; }, description: "+20 juice per second" },
-            { name: "GMO Oranges", baseCost: 1000, costMultiplier: 1.4, effect: () => juicePerClick *= 2, description: "Double juice per click" },
-            { name: "Orange Dimension", baseCost: 5000, costMultiplier: 1.5, effect: () => { juicePerSecond *= 2; orangesPerSecond *= 2; }, description: "Double juice per second" },
-            { name: "Time Warper", baseCost: 10000, costMultiplier: 1.6, effect: () => { juicePerClick *= 3; juicePerSecond *= 3; orangesPerSecond *= 3; }, description: "Triple both click and passive production" },
-            { name: "Citrus Singularity", baseCost: 50000, costMultiplier: 2, effect: () => { juicePerClick *= 10; juicePerSecond *= 10; orangesPerSecond *= 10; }, description: "10x all juice production" },
+            { name: "Better Squeezing", baseCost: 10, costMultiplier: 2.2, effect: () => juicePerClick++, description: "Increase juice per click" },
+            { name: "Auto Squeezer", baseCost: 50, costMultiplier: 2.3, effect: () => { juicePerSecond++; orangesPerSecond++; }, description: "Produce 1 juice per second" },
+            { name: "Orange Grove", baseCost: 100, costMultiplier: 2.4, effect: () => { juicePerSecond += 5; orangesPerSecond += 5; }, description: "+5 juice per second" },
+            { name: "Juice Factory", baseCost: 500, costMultiplier: 2.6, effect: () => { juicePerSecond += 20; orangesPerSecond += 20; }, description: "+20 juice per second" },
+            { name: "GMO Oranges", baseCost: 1000, costMultiplier: 2.8, effect: () => juicePerClick *= 2, description: "Double juice per click" },
+            { name: "Orange Dimension", baseCost: 5000, costMultiplier: 3, effect: () => { juicePerSecond *= 2; orangesPerSecond *= 2; }, description: "Double juice per second" },
+            { name: "Time Warper", baseCost: 10000, costMultiplier: 3.2, effect: () => { juicePerClick *= 3; juicePerSecond *= 3; orangesPerSecond *= 3; }, description: "Triple both click and passive production" },
+            { name: "Citrus Singularity", baseCost: 50000, costMultiplier: 4, effect: () => { juicePerClick *= 10; juicePerSecond *= 10; orangesPerSecond *= 10; }, description: "10x all juice production" },
             // New upgrades
-            { name: "Efficient Peeler", baseCost: 200, costMultiplier: 1.2, effect: () => juicePerClick += 5, description: "+5 juice per click" },
-            { name: "Orange Cloner", baseCost: 1500, costMultiplier: 1.3, effect: () => { juicePerSecond += 50; orangesPerSecond += 50; }, description: "+50 juice per second" },
-            { name: "Quantum Juicer", baseCost: 7500, costMultiplier: 1.4, effect: () => { juicePerClick *= 3; juicePerSecond *= 3; }, description: "Triple both click and passive production" },
-            { name: "Orange Fusion", baseCost: 25000, costMultiplier: 1.5, effect: () => { juicePerClick *= 5; juicePerSecond *= 5; }, description: "5x all juice production" },
-            { name: "Citrus Accelerator", baseCost: 100000, costMultiplier: 1.6, effect: () => { juicePerClick *= 20; juicePerSecond *= 20; }, description: "20x all juice production" },
-            { name: "Orange Synthesizer", baseCost: 500000, costMultiplier: 1.7, effect: () => { juicePerSecond += 1000; orangesPerSecond += 1000; }, description: "+1000 juice per second" },
-            { name: "Pulp Recycler", baseCost: 1000000, costMultiplier: 1.8, effect: () => { juicePerClick *= 50; }, description: "50x juice per click" },
-            { name: "Citrus Replicator", baseCost: 5000000, costMultiplier: 1.9, effect: () => { juicePerSecond *= 100; orangesPerSecond *= 100; }, description: "100x juice per second" },
-            { name: "Critical Squeeze", baseCost: 10000000, costMultiplier: 2, effect: () => { criticalClickChance += 0.05; }, description: "+5% chance for critical clicks" },
-            { name: "Mega Crit", baseCost: 50000000, costMultiplier: 2.1, effect: () => { criticalClickMultiplier++; }, description: "Increase critical click multiplier" },
+            { name: "Efficient Peeler", baseCost: 2000, costMultiplier: 2.4, effect: () => juicePerClick += 5, description: "+5 juice per click" },
+            { name: "Orange Cloner", baseCost: 15000, costMultiplier: 2.6, effect: () => { juicePerSecond += 50; orangesPerSecond += 50; }, description: "+50 juice per second" },
+            { name: "Quantum Juicer", baseCost: 75000, costMultiplier: 2.8, effect: () => { juicePerClick *= 3; juicePerSecond *= 3; }, description: "Triple both click and passive production" },
+            { name: "Orange Fusion", baseCost: 250000, costMultiplier: 3, effect: () => { juicePerClick *= 5; juicePerSecond *= 5; }, description: "5x all juice production" },
+            { name: "Citrus Accelerator", baseCost: 1000000, costMultiplier: 3.2, effect: () => { juicePerClick *= 20; juicePerSecond *= 20; }, description: "20x all juice production" },
+            { name: "Orange Synthesizer", baseCost: 5000000, costMultiplier: 3.4, effect: () => { juicePerSecond += 1000; orangesPerSecond += 1000; }, description: "+1000 juice per second" },
+            { name: "Pulp Recycler", baseCost: 10000000, costMultiplier: 3.6, effect: () => { juicePerClick *= 50; }, description: "50x juice per click" },
+            { name: "Citrus Replicator", baseCost: 50000000, costMultiplier: 3.8, effect: () => { juicePerSecond *= 100; orangesPerSecond *= 100; }, description: "100x juice per second" },
+            { name: "Critical Squeeze", baseCost: 100000000, costMultiplier: 4, effect: () => { criticalClickChance += 0.05; }, description: "+5% chance for critical clicks" },
+            { name: "Mega Crit", baseCost: 500000000, costMultiplier: 4.2, effect: () => { criticalClickMultiplier++; }, description: "Increase critical click multiplier" },
         ];
 
         const orangeElement = document.getElementById('orange');
